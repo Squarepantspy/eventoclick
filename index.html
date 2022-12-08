@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onclick</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <!--barra de navegacion-->
+    <header>
+        <nav>
+            <h1>Dojonary</h1>
+            <input type="search" id="busqueda" name="search" placeholder="Search">
+            <button type="button" id="login" onclick="changelog(this)">Login</button>
+        </nav>
+    </header>
+    <!--main-->
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="cuadro">
+                    <div class="names">
+                        <h2>ninja</h2>
+                        <h3>noun</h3>
+                        <p>Plural: <span class="cursive">ninjas</span></p>
+                        <button type="button" id="likes1" onclick="generaralerta(this)">13 likes</button>
+                    </div>
+                    <div class="definitions">
+                        <p>A practitioner skilled in the <br> <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="cuadro">
+                        <div class="names">
+                            <h2>ninja</h2>
+                            <h3>noun</h3>
+                            <p>Plural: <span>ninjas</span></p>
+                            <button type="button" id="likes2" onclick="generaralerta(this)">37 likes</button>
+                        </div>
+                        <div class="definitions">
+                            <p>A <a href="#">programmer</a> who breaks <br> down problems with <a href="#">zen</a>-like <br>focus</p>
+                        </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="add">
+                    <p> Dojonary is <br> defined by <span>YOU</span></p>
+                    <button type="button" id="adddef" onclick="removebutton(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
